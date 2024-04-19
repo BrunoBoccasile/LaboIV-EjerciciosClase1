@@ -1,0 +1,18 @@
+<h1 class="titulo">{{title}}</h1>
+<div class="ejercicioUno">
+  <h2>Ejercicio 1</h2>
+  <label>Edad uno:</label>
+  <input type="number" [(ngModel)]="edadUno" >
+  <br>
+  <label>Edad dos:</label>
+  <input type="number" [(ngModel)]="edadDos" >
+  <br>
+  <input type="button" value="Calcular" (click)="sumar()" (click)="promediar()">
+  <input type="button" value="Limpiar cuadros de texto" (click)="limpiar()">
+  <br>
+  <label>Suma: {{suma}}</label>
+  <br>
+  <label>Promedio: {{promedio}}</label>
+</div>
+
+<app-login></app-login>

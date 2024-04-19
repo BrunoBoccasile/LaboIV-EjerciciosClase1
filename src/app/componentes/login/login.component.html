@@ -1,0 +1,17 @@
+<div class="ejercicioDos">
+    <h2>Ejercicio 2</h2>
+    <label>Usuario: </label>
+    <input type="text" [(ngModel)]="usuario.user" >
+    <br>
+    <label>Password: </label>
+    <input type="text" [(ngModel)]="usuario.clave" >
+    
+    @if (usuario.user == "admin" && usuario.clave == "123") 
+    {
+      <app-bienvenido></app-bienvenido>
+    }
+    @else 
+    {
+      <app-error></app-error>
+    }
+</div>
